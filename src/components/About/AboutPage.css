@@ -1,0 +1,50 @@
+.container {
+    padding-top: 50px;
+  }
+  
+  .title {
+    margin-bottom: 30px;
+  }
+  
+  .description {
+    margin-bottom: 30px;
+  }
+  
+  .cardGrid {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .card {
+    width: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    animation: fadeInUp 0.5s ease-in-out;
+  }
+  
+  .cardTitle {
+    font-size: 16px;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  @keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .card:nth-child(odd) {
+    background-color: #ff6b6b; /* Red */
+  }
+  
+  .card:nth-child(even) {
+    background-color: #74b9ff; /* Blue */
+  }
+  
