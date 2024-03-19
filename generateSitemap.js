@@ -14,7 +14,7 @@ const routes = [
 
 (async () => {
   try {
-    const sitemap = new SitemapStream({ hostname: 'https://www.example.com' }); // Replace with your domain
+    const sitemap = new SitemapStream({ hostname: 'https://speedreading.vercel.app/' }); // Replace with your domain
     const pipeline = Readable.from(routes).pipe(sitemap);
     const gzippedStream = pipeline.pipe(createGzip());
 
