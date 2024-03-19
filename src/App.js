@@ -96,7 +96,7 @@ function App() {
               <Route path="/contact-us" element={<ContactPage />} />
               <Route path="/about-us" element={<AboutPage />} />
               <Route path="/privacy-policy" element={<PrivacyPolicy />} />
-              <Route path="/sitemap" element={<Sitemap />} />
+              <Route path="/sitemap.xml" element={<Sitemap />} />
             </Routes>
           </div>
         </div>
