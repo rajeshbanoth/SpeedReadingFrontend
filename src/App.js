@@ -11,6 +11,7 @@ import Header from "./components/Header/Header";
 import PrivacyPolicy from "./components/Privacypolicy/PrivacyPolicy";
 import axios from "axios";
 import Api from "./components/Api";
+import Sitemap from "./components/Sitemap";
 
 const theme = createTheme({
   typography: {
@@ -95,6 +96,7 @@ function App() {
               <Route path="/contact-us" element={<ContactPage />} />
               <Route path="/about-us" element={<AboutPage />} />
               <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+              <Route path="/sitemap" element={<Sitemap />} />
             </Routes>
           </div>
         </div>
