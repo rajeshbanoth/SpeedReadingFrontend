@@ -85,9 +85,15 @@ const ContactPage = () => {
         />
       </Helmet>
       <Header />
-      <Container className="container">
+      {/* className="container" */}
+      <Container sx={{ marginTop: { xs: "80px" } }}>
         <Grid container spacing={3}>
-          <Grid item md={6} lg={6} display={{ xs: "none", lg: "block" }}>
+          <Grid
+            item
+            md={6}
+            lg={6}
+            display={{ xs: "none", lg: "block", md: "block" }}
+          >
             <div
               style={{
                 padding: "20px",
@@ -233,85 +239,92 @@ const ContactPage = () => {
                   </Button>
                 </Grid>
 
-
-                <Grid item xs={12} display={{ lg: "none",md:'none', xs: "block" }}>
-            <div
-              style={{
-                padding: "20px",
-                backgroundColor: "#f5f5f5",
-                borderRadius: "5px",
-              }}
-            >
-              <Typography
-                variant="h5"
-                style={{
-                  fontFamily: "Poppins",
-                  fontWeight: "bold",
-                  marginBottom: "20px",
-                  color: "#2c3e50",
-                  textAlign:'center'
-                }}
-              >
-                About Our Speed Reading App
-              </Typography>
-              <Typography
-                variant="body1"
-                style={{
-                  fontFamily: "Poppins",
-                  fontSize: "16px",
-                  lineHeight: "1.6",
-                  color: "#555",
-                }}
-              >
-                Our Speed Reading App is designed to{" "}
-                <strong style={{ color: "#007bff" }}>revolutionize</strong> the
-                way you consume information. It{" "}
-                <strong>utilizes cutting-edge</strong> technology to enhance
-                your reading speed and comprehension. Whether you're a student
-                trying to keep up with assignments or a professional striving to
-                stay ahead in your field, our app is here to{" "}
-                <strong style={{ color: "#28a745" }}>empower</strong> you.
-              </Typography>
-              <Typography
-                variant="body1"
-                style={{
-                  fontFamily: "Poppins",
-                  fontSize: "16px",
-                  lineHeight: "1.6",
-                  color: "#555",
-                  marginTop: "20px",
-                }}
-              >
-                With our <strong>customizable exercises</strong> and{" "}
-                <strong>intuitive interface</strong>, you can tailor your
-                reading experience to suit your needs and goals. Experience the{" "}
-                <strong style={{ color: "#ffc107" }}>joy</strong> of reading as
-                you effortlessly absorb information and{" "}
-                <strong>unlock your full potential</strong> with our Speed
-                Reading App.
-              </Typography>
-              <Typography
-                variant="body1"
-                style={{
-                  fontFamily: "Poppins",
-                  fontSize: "16px",
-                  lineHeight: "1.6",
-                  color: "#555",
-                  marginTop: "20px",
-                }}
-              >
-                Take the first step towards{" "}
-                <strong style={{ color: "#dc3545" }}>
-                  maximizing your productivity
-                </strong>{" "}
-                and <strong>enhancing your learning</strong>. Join thousands of
-                satisfied users who have{" "}
-                <strong>transformed their reading habits</strong> and achieved{" "}
-                <strong>remarkable results</strong>
-                with our innovative Speed Reading App.
-              </Typography>
-            </div>
-          </Grid>
+                <Grid
+                  item
+                  xs={12}
+                  display={{ lg: "none", md: "none", xs: "block" }}
+                >
+                  <div
+                    style={{
+                      padding: "20px",
+                      backgroundColor: "#f5f5f5",
+                      borderRadius: "5px",
+                    }}
+                  >
+                    <Typography
+                      variant="h5"
+                      style={{
+                        fontFamily: "Poppins",
+                        fontWeight: "bold",
+                        marginBottom: "20px",
+                        color: "#2c3e50",
+                        textAlign: "center",
+                      }}
+                    >
+                      About Our Speed Reading App
+                    </Typography>
+                    <Typography
+                      variant="body1"
+                      style={{
+                        fontFamily: "Poppins",
+                        fontSize: "16px",
+                        lineHeight: "1.6",
+                        color: "#555",
+                      }}
+                    >
+                      Our Speed Reading App is designed to{" "}
+                      <strong style={{ color: "#007bff" }}>
+                        revolutionize
+                      </strong>{" "}
+                      the way you consume information. It{" "}
+                      <strong>utilizes cutting-edge</strong> technology to
+                      enhance your reading speed and comprehension. Whether
+                      you're a student trying to keep up with assignments or a
+                      professional striving to stay ahead in your field, our app
+                      is here to{" "}
+                      <strong style={{ color: "#28a745" }}>empower</strong> you.
+                    </Typography>
+                    <Typography
+                      variant="body1"
+                      style={{
+                        fontFamily: "Poppins",
+                        fontSize: "16px",
+                        lineHeight: "1.6",
+                        color: "#555",
+                        marginTop: "20px",
+                      }}
+                    >
+                      With our <strong>customizable exercises</strong> and{" "}
+                      <strong>intuitive interface</strong>, you can tailor your
+                      reading experience to suit your needs and goals.
+                      Experience the{" "}
+                      <strong style={{ color: "#ffc107" }}>joy</strong> of
+                      reading as you effortlessly absorb information and{" "}
+                      <strong>unlock your full potential</strong> with our Speed
+                      Reading App.
+                    </Typography>
+                    <Typography
+                      variant="body1"
+                      style={{
+                        fontFamily: "Poppins",
+                        fontSize: "16px",
+                        lineHeight: "1.6",
+                        color: "#555",
+                        marginTop: "20px",
+                      }}
+                    >
+                      Take the first step towards{" "}
+                      <strong style={{ color: "#dc3545" }}>
+                        maximizing your productivity
+                      </strong>{" "}
+                      and <strong>enhancing your learning</strong>. Join
+                      thousands of satisfied users who have{" "}
+                      <strong>transformed their reading habits</strong> and
+                      achieved <strong>remarkable results</strong>
+                      with our innovative Speed Reading App.
+                    </Typography>
+                  </div>
+                </Grid>
               </Grid>
             </form>
             {formStatus === "success" && (
