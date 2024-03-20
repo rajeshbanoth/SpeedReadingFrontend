@@ -26,7 +26,10 @@ const AboutPage = () => {
     <div>
       <Helmet>
         <title>About Us - Speed Reading App</title>
-        <meta name="description" content="Learn more about the Speed Reading App and how it can help you read faster and improve your brain power." />
+        <meta
+          name="description"
+          content="Learn more about the Speed Reading App and how it can help you read faster and improve your brain power."
+        />
       </Helmet>
       <Header />
       <Container className="container" style={{ marginTop: "100px" }}>
@@ -49,11 +52,11 @@ const AboutPage = () => {
           className="description"
           style={{ fontFamily: "Poppins", marginBottom: "30px" }}
         >
-          My name is Rajesh Banoth, and I'm a full-stack developer ,completed my graduation in 
-          Computer Science Engineering at Delhi Technological University.
-          I'm passionate about creating innovative solutions, and I've developed
-          this speed reading practice app to help users enhance their reading
-          skills.
+          My name is Rajesh Banoth, and I'm a full-stack developer ,completed my
+          graduation in Computer Science Engineering at Delhi Technological
+          University. I'm passionate about creating innovative solutions, and
+          I've developed this speed reading practice app to help users enhance
+          their reading skills.
         </Typography>
         <Grid container spacing={3} className="cardGrid">
           {generateInnovativeTexts().map((text, index) => (
@@ -73,7 +76,6 @@ const AboutPage = () => {
           ))}
         </Grid>
       </Container>
-      <Footer />
     </div>
   );
 };
