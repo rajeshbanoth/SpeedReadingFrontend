@@ -49,8 +49,8 @@ const AboutPage = () => {
           className="description"
           style={{ fontFamily: "Poppins", marginBottom: "30px" }}
         >
-          My name is Rajesh Banoth, and I'm a full-stack developer currently
-          studying Computer Science Engineering at Delhi Technological University.
+          My name is Rajesh Banoth, and I'm a full-stack developer ,completed my graduation in 
+          Computer Science Engineering at Delhi Technological University.
           I'm passionate about creating innovative solutions, and I've developed
           this speed reading practice app to help users enhance their reading
           skills.
