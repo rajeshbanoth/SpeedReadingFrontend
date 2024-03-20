@@ -31,9 +31,17 @@ function HomePage() {
 
   return (
     <>
-     <Helmet>
+      <Helmet>
         <title>Speed Reading App - Learn to Read Faster</title>
-        <meta name="description" content="Welcome to the Speed Reading App, where you can learn how to read faster, improve your brain power, and gain innovative tips for speed reading." />
+        <meta
+          name="description"
+          content="Welcome to the Speed Reading App, where you can learn how to read faster, improve your brain power, and gain innovative tips for speed reading. Enhance your cognitive abilities, master speed reading techniques, boost reading speed, increase comprehension, accelerate learning, improve focus, efficient reader, advanced reading methods, absorb information, elevate reading skills, cognitive enhancement, productivity improvement, quick comprehension, rapid reading, innovative strategies, reading exercises, proficient reader, speed reader app, enhance brain function, enhance productivity, learn faster, speed reading tools, increase knowledge retention, speed reading techniques, effective reading, brain training, speed reading methods, reading efficiency, speed reading practice, memory enhancement, reading comprehension, brain exercises, reading fluency, brain fitness, speed reading benefits, brain health, brain workout, cognitive training, mental agility, brain stimulation, brain development, brain training exercises, mental fitness, reading proficiency, cognitive skills, cognitive enhancement tools, increase reading speed, accelerated learning techniques, memory improvement, concentration techniques."
+        />
+        <meta
+          name="keywords"
+          content="speed reading, speed reader, reading app, speed reading techniques, cognitive abilities, brain power, cognitive enhancement, read faster, improve focus, absorb information, increase comprehension, accelerate learning, efficient reader, advanced reading methods, innovative strategies, reading exercises, boost reading speed, enhance brain function, improve productivity, learn faster, speed reading tools, increase knowledge retention, effective reading, brain training, reading efficiency, memory enhancement, brain exercises, brain fitness, brain health, cognitive training, mental agility, brain stimulation, mental fitness, reading proficiency, cognitive skills, accelerated learning techniques, concentration techniques, rapid reading, quick comprehension, reading fluency, speed reading benefits, brain workout, brain development, cognitive enhancement tools, speed reading methods, speed reading practice, memory improvement, reading comprehension, enhance reading skills, brain exercises, brain workout, brain health, brain development, improve cognitive abilities, brain stimulation, brain fitness, cognitive training, mental agility, brain health, brain development, mental fitness, reading proficiency, cognitive skills, cognitive enhancement tools, increase reading speed, accelerated learning techniques, memory improvement, concentration techniques"
+        />
+        <link rel="canonical" href="https://speedreading.vercel.app" />
       </Helmet>
       <CssBaseline />
       <Container
@@ -43,9 +51,8 @@ function HomePage() {
           py: 4,
           backgroundColor: "#f5f5f5",
           boxShadow: "0 0 10px rgba(0, 0, 0, 0.1)",
-          marginTop:"50px"
+          marginTop: "50px",
         }}
-
       >
         <Content />
         <Box

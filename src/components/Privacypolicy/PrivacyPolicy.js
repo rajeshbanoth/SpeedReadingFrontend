@@ -11,6 +11,7 @@ export default function PrivacyPolicy(props) {
          <Helmet>
         <title>Privacy Policy - Speed Reading App</title>
         <meta name="description" content="Read our Privacy Policy to understand how we collect, use, and protect your personal information on the Speed Reading App." />
+        <link rel="canonical" href="https://speedreading.vercel.app/privacy-policy" />  
       </Helmet>
         
         <div style={{padding:"30px"}}>
